@@ -10,7 +10,7 @@ fi
 yum install openssl-devel
 cd /usr/src
 wget http://www.openssl.org/source/openssl-1.0.1i.tar.gz
-tar -zxf openssl-1.0.1g.tar.gz
+tar -zxf openssl-1.0.1i.tar.gz
 cd openssl-1.0.1i
 ./config --prefix=/usr --openssldir=/usr/local/openssl shared
 make

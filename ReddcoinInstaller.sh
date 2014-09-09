@@ -6,7 +6,7 @@ if [ ! -x /usr/bin/wget ] ; then
 fi
 
 
-//Installazione di OpenSSl
+//Install OpenSSL from source
 yum install openssl-devel
 cd /usr/src
 wget http://www.openssl.org/source/openssl-1.0.1g.tar.gz
@@ -19,7 +19,7 @@ make install
 rm -rf openssl-1.0.1g.tar.gz
 rm -rf openssl-1.0.1g
 
-//Installazione altre dipendenze
+//Install other stuff
 yum install openssl-devel
 yum install git
 yum install boost-devel db4 db4-devel
@@ -31,13 +31,14 @@ yum install g++
 yum install gcc-c++
 yum update
 
-//creazione utente, download e compilazione
+//New user, download and compile
 useradd reddcoin
 cd /home/reddcoin
 git clone https://github.com/reddcoin-project/reddcoin
 cd /home/reddcoin/reddcoin/src
 make -f makefile.unix BOOST_LIB_SUFFIX=-mt
 
-//Download file di configurazione
+//Download configuration file
+mkdir /root/.reddcoin
 cd /root/.reddcoin
 wget http://pastebin.com/raw.php?i=qzZRNCHm -O reddcoin.conf

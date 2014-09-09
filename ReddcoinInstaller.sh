@@ -24,11 +24,11 @@ yum install openssl-devel
 yum install git
 yum install boost-devel db4 db4-devel
 yum install gcc
-rpm -Uvh http://pkgs.repoforge.org/miniupnpc/miniupnpc-1.5-1.el6.rf.x86_64.rpm
-rpm -Uvh http://pkgs.repoforge.org/miniupnpc/miniupnpc-devel-1.5-1.el6.rf.x86_64.rpm
 yum install lboost
 yum install g++
 yum install gcc-c++
+rpm -Uvh http://pkgs.repoforge.org/miniupnpc/miniupnpc-1.5-1.el6.rf.x86_64.rpm
+rpm -Uvh http://pkgs.repoforge.org/miniupnpc/miniupnpc-devel-1.5-1.el6.rf.x86_64.rpm
 yum update
 
 //New user, download and compile

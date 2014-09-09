@@ -39,6 +39,6 @@ cd /home/reddcoin/reddcoin/src
 make -f makefile.unix BOOST_LIB_SUFFIX=-mt
 
 //Download configuration file
-mkdir /root/.reddcoin
-cd /root/.reddcoin
+mkdir ~/.reddcoin
+cd ~/.reddcoin
 wget http://pastebin.com/raw.php?i=qzZRNCHm -O reddcoin.conf

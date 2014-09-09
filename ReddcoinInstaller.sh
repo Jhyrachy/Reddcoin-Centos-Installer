@@ -20,6 +20,7 @@ rm -rf openssl-1.0.1g.tar.gz
 rm -rf openssl-1.0.1g
 
 //Install other stuff
+yum update
 yum install openssl-devel
 yum install git
 yum install boost-devel db4 db4-devel

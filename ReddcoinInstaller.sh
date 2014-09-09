@@ -7,20 +7,19 @@ fi
 
 
 //Install OpenSSL from source
+yum install openssl-devel
 cd /usr/src
-wget https://www.openssl.org/source/openssl-1.0.0n.tar.gz
+wget http://www.openssl.org/source/openssl-1.0.1i.tar.gz
 tar -zxf openssl-1.0.1g.tar.gz
 cd openssl-1.0.1g
 ./config --prefix=/usr --openssldir=/usr/local/openssl shared
 make
 make test
 make install
-rm -rf openssl-1.0.1n.tar.gz
-rm -rf openssl-1.0.1n
-yum install openssl-devel
+rm -rf openssl-1.0.1i.tar.gz
+rm -rf openssl-1.0.1i
 
 //Install other stuff
-yum update
 yum install openssl-devel
 yum install git
 yum install boost-devel db4 db4-devel

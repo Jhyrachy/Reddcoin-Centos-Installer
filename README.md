@@ -1,6 +1,6 @@
 I havent' touched this thing in like 10 years, please do not use it
-
 =========================
+
 Reddcoin-Centos-Installer
 =========================
 
